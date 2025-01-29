@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+background: url('img/bg.jpeg');
+
+background-size: cover;
+padding: 0%;
+}
+
+header {
+    width: 100%; 
+    margin-top:0; 
+    padding: 0; 
+    font-family: sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    position: relative; /* Optional: adjust based on your layout needs */
+}
+nav{
+    
+    height: 100px;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+text-decoration: none;
+color: #fff;
+font-size: 20px;
+letter-spacing: 2px;
+padding: 10px 20px;
+position: relative;
+}
+.menu a::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid indianred;
+    transition: 0.4s linear;
+}
+    .menu a:hover::before{
+        width: 90%;
+    }
+
+
+.register a{
+text-decoration: none;
+color: #fff;
+font-size: 20px;
+letter-spacing: 2px;
+padding: 10px 20px;
+background-color: indianred;
+border-radius: 5px;
+}
+
+.register a:hover{
+    background-color: transparent;
+    border: 1px solid indianred;
+    transition: 0.4s;
+}
+.h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:#fff;
+}
+.h-txt span{
+    letter-spacing: 5px;
+}
+.h-txt h1{
+    font-size: 3.5em;
+}
+.h-txt a{
+    text-decoration: none;
+    background-color: indianred;
+    color: #fff;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+.h-txt a:hover{
+    background-color: transparent;
+    border: 1px solid indianred;
+    transition: 0.4s;
+}
